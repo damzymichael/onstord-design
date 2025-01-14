@@ -21,6 +21,7 @@ import student_report from '@/assets/landing-page/student_report.png';
 
 //Todo Add montserrat font
 //Todo Zooming out stretches out header
+//Todo Get shadow from figma
 
 function Home() {
   const imageSrcs = [oau, unilag, noun, ui, aaua, unknwon];
@@ -278,12 +279,12 @@ function Home() {
         </div>
       </section>
 
-      <section className='px-5 sm:px-20'>
+      <section className='px-5 sm:px-20 mb-20'>
         <h3 className='uppercase font-bold text-2xl sm:text-3xl md:text-4xl text-center mb-5'>
           Our features
         </h3>
         <p className='text-center text-[#696984] text-xl mb-16 sm:mb-28'>
-          This very extraordinary feature, can make learning activities more
+          These very extraordinary features, can make learning activities more
           efficient
         </p>
         <ul
@@ -305,19 +306,11 @@ function Home() {
                 designed for the classroom on your mobile
               </h3>
               <ul className='mt-8 space-y-3'>
-                <li className='flex gap-5 items-start'>
-                  <div className='p-3 bg-[#FBFBFB] shadow-lg rounded-full'>
-                    {/* {Array.from({length: 4}).map((_, i, {length}) => (
-                      <div
-                        className={
-                          'w-2 h-2 rounded-sm ' +
-                          (i + 1 == length ? 'bg-[#2F327D] ' : 'bg-[#3491E7]')
-                        }
-                      />
-                    ))} */}
+                <li className='flex gap-3 sm:gap-5 items-start'>
+                  <div className='p-2 bg-[#FBFBFB] shadow-lg rounded-full'>
                     <svg
-                      width='27'
-                      height='26'
+                      width='20'
+                      height='20'
                       viewBox='0 0 27 26'
                       fill='none'
                       xmlns='http://www.w3.org/2000/svg'
@@ -352,16 +345,16 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className='text-[#696984] text-2xl lg:max-w-[320px]'>
+                  <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[320px]'>
                     Teachers don’t get lost in the grid view and have a
-                    dedicated Podium space.
+                    dedicated podium space.
                   </p>
                 </li>
-                <li className='flex gap-5 items-start'>
-                  <div className='bg-[#FBFBFB] w-max relative shadow-lg rounded-full p-3'>
+                <li className='flex gap-3 sm:gap-5 items-start'>
+                  <div className='bg-[#FBFBFB] w-max relative shadow-lg rounded-full p-2'>
                     <svg
-                      width='28'
-                      height='26'
+                      width='20'
+                      height='20'
                       viewBox='0 0 28 26'
                       fill='none'
                       xmlns='http://www.w3.org/2000/svg'
@@ -382,15 +375,15 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className='text-[#696984] text-2xl lg:max-w-[320px]'>
+                  <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[320px]'>
                     TA’s and presenters can be moved to the front of the class.
                   </p>
                 </li>
-                <li className='flex gap-5 items-start'>
-                  <div className='bg-[#FBFBFB] w-max relative shadow-lg rounded-full p-3'>
+                <li className='flex gap-3 sm:gap-5 items-start'>
+                  <div className='bg-[#FBFBFB] w-max relative shadow-lg rounded-full p-2'>
                     <svg
-                      width='28'
-                      height='22'
+                      width='20'
+                      height='20'
                       viewBox='0 0 30 24'
                       fill='none'
                       xmlns='http://www.w3.org/2000/svg'
@@ -401,7 +394,7 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className='text-[#696984] text-2xl lg:max-w-[320px]'>
+                  <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[320px]'>
                     Teachers can easily see all students and class data at one
                     time.
                   </p>
@@ -413,11 +406,11 @@ function Home() {
           {/* Perfect tools  */}
           <li className='flex justify-between flex-col-reverse lg:flex-row gap-10 lg:gap-16'>
             <div className='lg:max-w-[520px]'>
-              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl lg:max-w-[300px] mb-8'>
+              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl lg:max-w-[300px] mb-4 sm:mb-8'>
                 The perfect <span className='text-[#3491E7]'>Tools</span> For
                 Teachers And Learners
               </h3>
-              <p className='text-[#696984] text-2xl lg:max-w-[400px]'>
+              <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[400px]'>
                 Class has a dynamic set of teaching tools built to be deployed
                 and used during class. Teachers can handout assignments in
                 real-time for students to complete and submit.
@@ -456,11 +449,11 @@ function Home() {
               <div className='bg-[#34E7A5] w-5 h-5 rounded-full absolute -bottom-1/4 -translate-x-1/2 -z-10 hidden lg:block' />
             </div>
             <div>
-              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl mb-8'>
+              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl mb-4 sm:mb-8'>
                 Assessments, <br className='hidden lg:block' />{' '}
                 <span className='text-[#3491E7]'>Quizzes</span>, Tests
               </h3>
-              <p className='text-[#696984] text-2xl lg:max-w-[500px]'>
+              <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[500px]'>
                 Easily launch live assignments, quizzes, and tests. Student
                 results are automatically entered in the online gradebook.
               </p>
@@ -470,11 +463,11 @@ function Home() {
           {/* Class management tools  */}
           <li className='flex items-center justify-between flex-col-reverse lg:flex-row gap-10 lg:gap-16 mt-32'>
             <div className='lg:max-w-[650px]'>
-              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl lg:max-w-[350px] mb-8'>
+              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl lg:max-w-[350px] mb-4 sm:mb-8'>
                 <span className='text-[#3491E7]'>Class management</span> Tools
                 for Educators
               </h3>
-              <p className='text-[#696984] text-2xl lg:max-w-[500px]'>
+              <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[500px]'>
                 Class provides tools to help run and manage the class such as
                 Class Roster, Attendance, and more. With the Gradebook, teachers
                 can review and grade tests and quizzes in real-time.
@@ -487,8 +480,35 @@ function Home() {
           </li>
         </ul>
       </section>
+
+      <section className='px-5 sm:px-20 flex'>
+        <div>
+          <header className='mb-10'>
+            <div className='flex gap-4 items-center mb-7'>
+              <div className='w-20 border border-[#525596]' />
+              <p className='text-[#525596] text-lg'>TESTIMONIAL</p>
+            </div>
+            <h2 className='font-bold text-[#2F327D] text-5xl'>
+              What They Say?
+            </h2>
+          </header>
+          <div className='space-y-5 text-xl sm:text-2xl text-[#696984] max-w-[550px]'>
+            <p>
+              Onstord has got more than 100k positive ratings from our users
+              around the world.
+            </p>
+            <p>
+              Some of the students and teachers were greatly helped by the
+              Skilline.
+            </p>
+            <p>Are you too? Please give your assessment</p>
+          </div>
+        </div>
+        <div></div>
+      </section>
     </div>
   );
 }
 
 export default Home;
+// box-shadow: 2px 4px 60px 0px #292C7C1A;
