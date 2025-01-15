@@ -34,7 +34,7 @@ function Home() {
             {links.map(link => (
               <li
                 key={Math.random() * 1000}
-                className='font-bold text-lg uppercase hover:font-extrabold hover:text-xl hover:text-pry transition-all'
+                className='font-bold uppercase hover:font-bold hover:text-lg hover:text-pry transition-all'
               >
                 <a href='#'>{link}</a>
               </li>
@@ -289,11 +289,11 @@ function Home() {
           {/* User interface  */}
           <li className='flex justify-between flex-col lg:flex-row gap-10'>
             <div className='relative w-full lg:w-1/2'>
-              <div className='bg-[#AED0EF] w-32 h-32 rounded-full absolute -top-[70px] -z-10 hidden sm:block' />
-              <div className='bg-[#33D9EF] w-8 h-8 rounded-full absolute left-[200px] -top-16 hidden sm:block' />
+              <div className='bg-[#AED0EF] w-32 h-32 rounded-full absolute -top-[60px] -z-10 hidden sm:block' />
+              <div className='bg-[#33D9EF] w-8 h-8 rounded-full absolute left-[200px] -top-10 hidden sm:block' />
               {/* Dimension width={722} height={528}  */}
               <img src={student_friends} alt='Students' className='w-full' />
-              <div className='bg-[#5B61EB] w-32 h-32 hidden lg:block rounded-full absolute bottom-10 -right-[20px] -z-10' />
+              <div className='bg-[#5B61EB] w-32 h-32 hidden lg:block rounded-full absolute -bottom-5 -right-[20px] -z-10' />
             </div>
             <div className='lg:max-w-[520px]'>
               <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-3xl'>
@@ -340,7 +340,7 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className='text-[#696984] text-lg sm:text-xl lg:max-w-[320px]'>
+                  <p className='text-[#696984] text-lg sm:text-xl'>
                     Teachers don’t get lost in the grid view and have a
                     dedicated podium space.
                   </p>
@@ -370,7 +370,7 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className='text-[#696984] text-lg sm:text-xl lg:max-w-[320px]'>
+                  <p className='text-[#696984] text-lg sm:text-xl'>
                     TA’s and presenters can be moved to the front of the class.
                   </p>
                 </li>
@@ -389,7 +389,7 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className='text-[#696984] text-lg sm:text-xl lg:max-w-[320px]'>
+                  <p className='text-[#696984] text-lg sm:text-xl'>
                     Teachers can easily see all students and class data at one
                     time.
                   </p>
@@ -401,11 +401,11 @@ function Home() {
           {/* Perfect tools  */}
           <li className='flex justify-between flex-col-reverse lg:flex-row gap-10 lg:gap-16'>
             <div className='lg:max-w-[520px]'>
-              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-4xl lg:max-w-[300px] mb-4 sm:mb-8'>
+              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-3xl lg:max-w-[300px] mb-4 sm:mb-8'>
                 The perfect <span className='text-[#3491E7]'>Tools</span> For
                 Teachers And Learners
               </h3>
-              <p className='text-[#696984] text-lg sm:text-2xl lg:max-w-[400px]'>
+              <p className='text-[#696984] text-lg sm:text-xl lg:max-w-[400px]'>
                 Class has a dynamic set of teaching tools built to be deployed
                 and used during class. Teachers can handout assignments in
                 real-time for students to complete and submit.
@@ -441,11 +441,11 @@ function Home() {
               <div className='bg-[#34E7A5] w-5 h-5 rounded-full absolute -bottom-1/4 -translate-x-1/2 -z-10 hidden lg:block' />
             </div>
             <div>
-              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-4xl mb-4 sm:mb-8'>
+              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-3xl mb-4 sm:mb-8'>
                 Assessments, <br className='hidden lg:block' />{' '}
                 <span className='text-[#3491E7]'>Quizzes</span>, Tests
               </h3>
-              <p className='text-[#696984] text-lg sm:text-2xl lg:max-w-[500px]'>
+              <p className='text-[#696984] text-lg sm:text-xl lg:max-w-[500px]'>
                 Easily launch live assignments, quizzes, and tests. Student
                 results are automatically entered in the online gradebook.
               </p>
@@ -455,11 +455,11 @@ function Home() {
           {/* Class management tools  */}
           <li className='flex items-center justify-between flex-col-reverse lg:flex-row gap-10 lg:gap-16 mt-32'>
             <div className='lg:max-w-[650px]'>
-              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-4xl lg:max-w-[350px] mb-4 sm:mb-8'>
+              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-3xl lg:max-w-[350px] mb-4 sm:mb-8'>
                 <span className='text-[#3491E7]'>Class management</span> Tools
                 for Educators
               </h3>
-              <p className='text-[#696984] text-lg sm:text-2xl lg:max-w-[500px]'>
+              <p className='text-[#696984] text-lg sm:text-xl lg:max-w-[500px]'>
                 Class provides tools to help run and manage the class such as
                 Class Roster, Attendance, and more. With the Gradebook, teachers
                 can review and grade tests and quizzes in real-time.
@@ -476,11 +476,11 @@ function Home() {
       <section className='px-5 sm:px-20 flex'>
         <div>
           <header className='mb-10'>
-            <div className='flex gap-4 items-center mb-7'>
+            <div className='hidden sm:flex gap-4 items-center mb-7'>
               <div className='w-20 border border-[#525596]' />
               <p className='text-[#525596] text-lg'>TESTIMONIAL</p>
             </div>
-            <h2 className='font-bold text-[#2F327D] text-5xl'>
+            <h2 className='font-bold text-[#2F327D] text-4xl sm:text-5xl'>
               What They Say?
             </h2>
           </header>
