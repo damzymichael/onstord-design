@@ -19,14 +19,9 @@ import examination from '@/assets/landing-page/examination.png';
 import note from '@/assets/landing-page/note_illustration.png';
 import student_report from '@/assets/landing-page/student_report.png';
 
-//Todo Add montserrat font
-//Todo Zooming out stretches out header
-//Todo Get shadow from figma
-
 function Home() {
   const imageSrcs = [oau, unilag, noun, ui, aaua, unknwon];
   const links = ['Home', 'Services', 'Features', 'Contact'];
-  // console.log(Math.trunc(5.6))
   return (
     <div className='pb-20'>
       {/* Should be full but content sitting in the middle  */}
@@ -49,18 +44,18 @@ function Home() {
       </header>
 
       {/* Hero section  */}
-      <section className='flex gap-5 lg:gap-0 flex-col lg:flex-row items-center justify-between px-5 sm:px-20 pt-10 pb-10 max-w-[1400px] mx-auto mb-0 lg:mb-32'>
+      <section className='flex gap-5 lg:gap-0 flex-col lg:flex-row items-center justify-between px-5 sm:px-20 pt-5 sm:pt-10 pb-10 max-w-[1400px] mx-auto mb-0 lg:mb-32'>
         {/* Text and CTA  */}
         <div className='max-w-[600px] flex flex-col justify-center'>
-          <h1 className='text-pry text-3xl font-bold leading-[60px] mb-5 text-center lg:text-left'>
+          <h1 className='text-pry text-2xl leading-[50px] sm:text-4xl sm:leading-[60px] font-bold mb-5 text-center lg:text-left'>
             We Make Education <br />
             Faster And Easier <br /> For Teachers And Students
           </h1>
-          <p className='font-medium text-lg mb-5 text-center lg:text-left'>
+          <p className='font-medium font-poppins text-base sm:text-xl mb-5 text-center lg:text-left'>
             A platform designed specifically for lecturers to share educational
             resources with students. With Onstord, you have the opportunity to
             create, upload, and manage a wide range of academic materials,
-            includingl ecture notes, video tutorials, assignments, and more.
+            including lecture notes, video tutorials, assignments, and more.
           </p>
           <div className='flex justify-center lg:justify-start gap-5'>
             <button className='px-5 py-3 border rounded-lg bg-pry text-white uppercase font-bold'>
@@ -167,7 +162,7 @@ function Home() {
         <h3 className='uppercase font-bold text-2xl sm:text-3xl md:text-4xl text-center mb-5'>
           Our Services
         </h3>
-        <p className='text-center text-xl max-w-[700px] mx-auto mb-20'>
+        <p className='text-center sm:text-xl max-w-[700px] mx-auto mb-20'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur id
           ipsam atque sapiente at modi nemo ullam consectetur temporibus
           recusandae autem, nostrum sit, iure deserunt maxime? Praesentium nobis
@@ -175,11 +170,11 @@ function Home() {
         </p>
         <ul className='px-5 grid gap-10 lg:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10'>
           {/* Move icon to top edge of container  */}
-          <li className='bg-white shadow-xl rounded-3xl p-4 relative'>
+          <li className='bg-white shadow-custom rounded-3xl p-4 relative'>
             <div className='bg-[#5B72EE] text-white p-4 w-max mx-auto rounded-full mb-2 shadow-xl -translate-y-10'>
               <FaFileInvoice size={25} />
             </div>
-            <h4 className='font-medium text-xl text-center mb-3'>
+            <h4 className='font-poppins font-medium text-xl text-center mb-3'>
               Online Billing, <br /> Invoicing, & Contracts
             </h4>
             <p className='text-center text-[#79828C] px-5 sm:px-10'>
@@ -188,11 +183,11 @@ function Home() {
             </p>
           </li>
 
-          <li className='bg-white shadow-xl rounded-3xl p-4 relative'>
+          <li className='bg-white shadow-custom rounded-3xl p-4 relative'>
             <div className='bg-[#545AE8] text-white p-4 w-max mx-auto rounded-full mb-2 shadow-xl -translate-y-10'>
               <IoCalendar size={25} />
             </div>
-            <h4 className='font-medium text-xl text-center mb-3'>
+            <h4 className='font-poppins font-medium text-xl text-center mb-3'>
               Easy Scheduling & <br /> Attendance Tracking
             </h4>
             <p className='text-center text-[#79828C] px-5 sm:px-10'>
@@ -201,11 +196,11 @@ function Home() {
             </p>
           </li>
 
-          <li className='bg-white shadow-xl rounded-3xl p-4 relative'>
+          <li className='bg-white shadow-custom rounded-3xl p-4 relative'>
             <div className='bg-[#29B9E7] text-white p-4 w-max mx-auto rounded-full mb-2 shadow-xl -translate-y-10'>
               <FaUsers size={25} />
             </div>
-            <h4 className='font-medium text-xl text-center mb-3'>
+            <h4 className='font-poppins font-medium text-xl text-center mb-3'>
               Customer Tracking
             </h4>
             <p className='text-center text-[#79828C] px-5 sm:px-10'>
@@ -215,14 +210,14 @@ function Home() {
           </li>
         </ul>
 
-        <p className='text-[#01162F] px-5 sm:px-10 lg:px-32 xl:px-36 text-center text-xl my-20'>
+        <p className='text-[#01162F] px-5 sm:px-10 lg:px-32 xl:px-36 text-center sm:text-xl my-20'>
           Onstord is a platform that allows educators to create online classes
           whereby they can store the course materials online; manage
           assignments, quizzes and exams; monitor due dates; grade results and
           provide students with feedback all in one place.
         </p>
 
-        <div className='flex gap-5 sm:gap-10 items-center justify-center mt-10 mb-28'>
+        <div className='font-poppins flex gap-5 sm:gap-10 items-center justify-center mt-5 sm:mt-10 mb-28'>
           {/* Lecturer's getting started  */}
           <div className='w-2/5 max-w-[400px] relative flex flex-col justify-end sm:pb-5 bg-lecturer-lib bg-cover bg-no-repeat'>
             <p className='text-white uppercase font-semibold text-base sm:text-xl text-center mb-3 mt-14 sm:mt-28'>
@@ -238,7 +233,7 @@ function Home() {
 
           {/* Student's getting started  */}
           <div className='w-2/5 max-w-[400px] relative flex flex-col justify-end sm:pb-5 bg-student-smile bg-cover bg-no-repeat'>
-            <p className='text-white uppercase font-semibold text-base sm:text-xl text-center mb-3 mt-14 sm:mt-28'>
+            <p className='text-white uppercase font-poppins font-semibold text-base sm:text-xl text-center mb-3 mt-14 sm:mt-28'>
               For students
             </p>
             <Link
@@ -260,7 +255,7 @@ function Home() {
               Everything you can do in a physical classroom,{' '}
               <span className='text-[#054292]'>you can do with Onstord</span>
             </h5>
-            <p className='text-[#696984] text-xl'>
+            <p className='text-[#696984] text-lg sm:text-xl'>
               Onstord school management software helps traditional and online
               schools manage scheduling, attendance, payments and virtual
               classrooms all in one secure cloud-based system.
@@ -283,7 +278,7 @@ function Home() {
         <h3 className='uppercase font-bold text-2xl sm:text-3xl md:text-4xl text-center mb-5'>
           Our features
         </h3>
-        <p className='text-center text-[#696984] text-xl mb-16 sm:mb-28'>
+        <p className='text-center text-[#696984] text-lg sm:text-xl mb-16 sm:mb-28'>
           These very extraordinary features, can make learning activities more
           efficient
         </p>
@@ -298,10 +293,10 @@ function Home() {
               <div className='bg-[#33D9EF] w-8 h-8 rounded-full absolute left-[200px] -top-16 hidden sm:block' />
               {/* Dimension width={722} height={528}  */}
               <img src={student_friends} alt='Students' className='w-full' />
-              <div className='bg-[#5B61EB] w-32 h-32 hidden lg:block rounded-full absolute -bottom-10 -right-[20px] -z-10' />
+              <div className='bg-[#5B61EB] w-32 h-32 hidden lg:block rounded-full absolute bottom-10 -right-[20px] -z-10' />
             </div>
             <div className='lg:max-w-[520px]'>
-              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl'>
+              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-3xl'>
                 A <span className='text-[#3491E7]'>user interface</span>{' '}
                 designed for the classroom on your mobile
               </h3>
@@ -345,7 +340,7 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[320px]'>
+                  <p className='text-[#696984] text-lg sm:text-xl lg:max-w-[320px]'>
                     Teachers don’t get lost in the grid view and have a
                     dedicated podium space.
                   </p>
@@ -375,7 +370,7 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[320px]'>
+                  <p className='text-[#696984] text-lg sm:text-xl lg:max-w-[320px]'>
                     TA’s and presenters can be moved to the front of the class.
                   </p>
                 </li>
@@ -394,7 +389,7 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[320px]'>
+                  <p className='text-[#696984] text-lg sm:text-xl lg:max-w-[320px]'>
                     Teachers can easily see all students and class data at one
                     time.
                   </p>
@@ -406,20 +401,17 @@ function Home() {
           {/* Perfect tools  */}
           <li className='flex justify-between flex-col-reverse lg:flex-row gap-10 lg:gap-16'>
             <div className='lg:max-w-[520px]'>
-              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl lg:max-w-[300px] mb-4 sm:mb-8'>
+              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-4xl lg:max-w-[300px] mb-4 sm:mb-8'>
                 The perfect <span className='text-[#3491E7]'>Tools</span> For
                 Teachers And Learners
               </h3>
-              <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[400px]'>
+              <p className='text-[#696984] text-lg sm:text-2xl lg:max-w-[400px]'>
                 Class has a dynamic set of teaching tools built to be deployed
                 and used during class. Teachers can handout assignments in
                 real-time for students to complete and submit.
               </p>
             </div>
             <div className='relative w-full lg:w-1/2'>
-              <div className=''>
-                <div></div>
-              </div>
               <div className='bg-[#FF6A6A] w-40 h-40 rounded-full absolute -top-[28px] left-28 -z-10 hidden lg:block' />
               <div className='bg-[#6BF0A8] w-5 h-5 rounded-full absolute -top-[70px] left-80 -z-10 hidden lg:block' />
               <div className='hidden lg:grid gap-10 grid-cols-10 grid-rows-7 absolute bottom-0 -rotate-12 origin-bottom-left '>
@@ -449,11 +441,11 @@ function Home() {
               <div className='bg-[#34E7A5] w-5 h-5 rounded-full absolute -bottom-1/4 -translate-x-1/2 -z-10 hidden lg:block' />
             </div>
             <div>
-              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl mb-4 sm:mb-8'>
+              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-4xl mb-4 sm:mb-8'>
                 Assessments, <br className='hidden lg:block' />{' '}
                 <span className='text-[#3491E7]'>Quizzes</span>, Tests
               </h3>
-              <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[500px]'>
+              <p className='text-[#696984] text-lg sm:text-2xl lg:max-w-[500px]'>
                 Easily launch live assignments, quizzes, and tests. Student
                 results are automatically entered in the online gradebook.
               </p>
@@ -463,11 +455,11 @@ function Home() {
           {/* Class management tools  */}
           <li className='flex items-center justify-between flex-col-reverse lg:flex-row gap-10 lg:gap-16 mt-32'>
             <div className='lg:max-w-[650px]'>
-              <h3 className='text-[#2F327D] font-semibold text-3xl sm:text-4xl lg:max-w-[350px] mb-4 sm:mb-8'>
+              <h3 className='text-[#2F327D] font-semibold text-2xl sm:text-4xl lg:max-w-[350px] mb-4 sm:mb-8'>
                 <span className='text-[#3491E7]'>Class management</span> Tools
                 for Educators
               </h3>
-              <p className='text-[#696984] text-xl sm:text-2xl lg:max-w-[500px]'>
+              <p className='text-[#696984] text-lg sm:text-2xl lg:max-w-[500px]'>
                 Class provides tools to help run and manage the class such as
                 Class Roster, Attendance, and more. With the Gradebook, teachers
                 can review and grade tests and quizzes in real-time.
@@ -501,7 +493,9 @@ function Home() {
               Some of the students and teachers were greatly helped by the
               Skilline.
             </p>
-            <p>Are you too? Please give your assessment</p>
+            <p className='font-poppins'>
+              Are you too? Please give your assessment
+            </p>
           </div>
         </div>
         <div></div>
@@ -511,4 +505,3 @@ function Home() {
 }
 
 export default Home;
-// box-shadow: 2px 4px 60px 0px #292C7C1A;

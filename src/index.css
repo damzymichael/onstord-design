@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-montserrat;
+}
+
 .text {
   color: rgb(235, 233, 244);
 }
