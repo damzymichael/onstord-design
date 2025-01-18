@@ -8,7 +8,8 @@ export default {
         poppins: ['Poppins', 'sans-serif']
       },
       boxShadow: {
-        custom: '2px 4px 60px 0px #292C7C1A'
+        custom: '2px 4px 60px 0px #292C7C1A',
+        quote: '2px 4px 60px 0px #292C7C1A'
       },
       colors: {
         pry: '#0A3B77'

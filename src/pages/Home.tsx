@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom';
 import {FaFileInvoice} from 'react-icons/fa6';
 import {IoCalendar} from 'react-icons/io5';
 import {FaUsers} from 'react-icons/fa';
+import {FaChevronRight} from 'react-icons/fa6';
 import man_talking from '@/assets/landing-page/man_talking.png';
 import woman_video_call from '@/assets/landing-page/woman_video_call.png';
 import woman_writing from '@/assets/landing-page/woman_writing.png';
@@ -18,6 +19,7 @@ import teacher_board from '@/assets/landing-page/teacher-board.png';
 import examination from '@/assets/landing-page/examination.png';
 import note from '@/assets/landing-page/note_illustration.png';
 import student_report from '@/assets/landing-page/student_report.png';
+import girl_with_books from '@/assets/landing-page/girl-with-books.jpg';
 
 function Home() {
   const imageSrcs = [oau, unilag, noun, ui, aaua, unknwon];
@@ -473,8 +475,8 @@ function Home() {
         </ul>
       </section>
 
-      <section className='px-5 sm:px-20 flex'>
-        <div>
+      <section className='px-5 sm:px-20 pb-28 flex justify-between relative'>
+        <div className=''>
           <header className='mb-10'>
             <div className='hidden sm:flex gap-4 items-center mb-7'>
               <div className='w-20 border border-[#525596]' />
@@ -484,7 +486,7 @@ function Home() {
               What They Say?
             </h2>
           </header>
-          <div className='space-y-5 text-xl sm:text-2xl text-[#696984] max-w-[550px]'>
+          <div className='space-y-4 text-lg sm:text-xl text-[#696984] max-w-[550px]'>
             <p>
               Onstord has got more than 100k positive ratings from our users
               around the world.
@@ -493,12 +495,40 @@ function Home() {
               Some of the students and teachers were greatly helped by the
               Skilline.
             </p>
-            <p className='font-poppins'>
-              Are you too? Please give your assessment
-            </p>
+            <p>Are you too? Please give your assessment</p>
+          </div>
+          <div className='absolute bottom-0 w-11/12 max-w-[480px] p-7 shadow-quote rounded-2xl text-[#5F5F7E]'>
+            <blockquote className='text-base sm:text-lg mb-4'>
+              "Thank you so much for your help. It's exactly what I've been
+              looking for. You won't regret it. It really saves me time and
+              effort. Skilline is exactly what our business has been lacking."
+            </blockquote>
+            {/* Paragraph below should be Nunito Sans font  */}
+            <p className='font-medium text-xl sm:text-2xl ml-5'>Gloria Rose</p>
           </div>
         </div>
-        <div></div>
+        <div className='relative w-1/2 max-w-[400px] mx-auto h-[500px]'>
+          <img
+            src={girl_with_books}
+            alt='Girl with books'
+            className='w-full h-full object-cover rounded-2xl -z-10'
+          />
+          <button className='bg-white p-3 w-max rounded-full shadow-lg absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2'>
+            <FaChevronRight color='#1EA4CE' />
+          </button>
+        </div>
+        <div className='absolute bg-white bottom-0 right-0 z-20 mr-5 sm:mr-20 w-full max-w-[480px] p-7 shadow-quote rounded-2xl text-[#5F5F7E]'>
+          <div className='relative'>
+            <div />
+            <blockquote className='text-base sm:text-lg mb-4'>
+              "Thank you so much for your help. It's exactly what I've been
+              looking for. You won't regret it. It really saves me time and
+              effort. Skilline is exactly what our business has been lacking."
+            </blockquote>
+            {/* Paragraph below should be Nunito Sans font  */}
+            <p className='font-medium text-xl sm:text-2xl ml-5'>Gloria Rose</p>
+          </div>
+        </div>
       </section>
     </div>
   );
