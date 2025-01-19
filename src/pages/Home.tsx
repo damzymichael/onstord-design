@@ -20,6 +20,7 @@ import examination from '@/assets/landing-page/examination.png';
 import note from '@/assets/landing-page/note_illustration.png';
 import student_report from '@/assets/landing-page/student_report.png';
 import girl_with_books from '@/assets/landing-page/girl-with-books.jpg';
+import customer_agent from '@/assets/landing-page/customer_agent.png';
 
 function Home() {
   const imageSrcs = [oau, unilag, noun, ui, aaua, unknwon];
@@ -475,7 +476,7 @@ function Home() {
         </ul>
       </section>
 
-      <section className='px-5 sm:px-20 pb-28 flex justify-between relative'>
+      <section className='px-5 sm:px-20 pb-28 mb-32 hidden lg:flex justify-between relative'>
         <div className=''>
           <header className='mb-10'>
             <div className='hidden sm:flex gap-4 items-center mb-7'>
@@ -517,9 +518,9 @@ function Home() {
             <FaChevronRight color='#1EA4CE' />
           </button>
         </div>
-        <div className='absolute bg-white bottom-0 right-0 z-20 mr-5 sm:mr-20 w-full max-w-[480px] p-7 shadow-quote rounded-2xl text-[#5F5F7E]'>
+        <div className='absolute bg-white bottom-0 right-0 z-20 mr-5 sm:mr-20 w-full max-w-[480px] p-7 shadow-quote rounded-2xl text-[#5F5F7E] overflow-hidden'>
           <div className='relative'>
-            <div />
+            <div className='absolute left-0 top-0 -ml-7 -mt-7 w-3 h-[150%] bg-[#F67766]' />
             <blockquote className='text-base sm:text-lg mb-4'>
               "Thank you so much for your help. It's exactly what I've been
               looking for. You won't regret it. It really saves me time and
@@ -528,6 +529,60 @@ function Home() {
             {/* Paragraph below should be Nunito Sans font  */}
             <p className='font-medium text-xl sm:text-2xl ml-5'>Gloria Rose</p>
           </div>
+        </div>
+      </section>
+
+      <section className='px-5 sm:px-20 hidden lg:block'>
+        <h2 className='text-center font-bold text-2xl sm:text-5xl mb-5'>
+          Let’s Talk
+        </h2>
+        <p className='text-center text-lg sm:text-xl mb-8'>
+          Are you experiencing some difficulties with our platform, you want to
+          be our sponsor, partner e.t.c, Drop your <br /> comment and we will
+          respond as soon as possible
+        </p>
+        <div className='flex justify-between gap-5 lg:gap-10'>
+          <div className='w-2/5 max-w-[500px]'>
+            <div className='relative bg-[#5B61EB] w-14 h-14 rounded-full top-10 left-10'>
+              <div className='absolute w-9/12 aspect-square rounded-full bg-[#BBCDDD]' />
+            </div>
+            <img
+              src={customer_agent}
+              alt='Customer care agent'
+              className='w-full'
+            />
+            <div className='bg-[#23BDEE] w-11/12 mx-auto h-12 rounded-2xl' />
+            <div className='bg-[#AFD0DB] w-10/12 h-12 mx-auto rounded-2xl -translate-y-5' />
+          </div>
+          <form className='w-2/5 space-y-5'>
+            <label className='block'>
+              <span className='block'>Name</span>
+              <input
+                type='text'
+                className='w-full bg-[#DAE5F3] outline-none p-3'
+              />
+            </label>
+
+            <label className='block'>
+              <span className='block'>Email</span>
+              <input
+                type='email'
+                className='w-full bg-[#DAE5F3] outline-none p-3'
+              />
+            </label>
+
+            <label className='block'>
+              <span className='block'>Message</span>
+              <textarea
+                rows={5}
+                className='w-full bg-[#DAE5F3] outline-none p-3'
+              ></textarea>
+            </label>
+
+            <button className='font-poppins block w-max mx-auto px-5 py-3 border rounded-lg bg-pry text-white uppercase font-bold'>
+              Submit
+            </button>
+          </form>
         </div>
       </section>
     </div>
